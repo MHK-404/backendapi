@@ -1,0 +1,13 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Azure Functions for Health Risk Calculator",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "dependencies": {
+    "azure-functions-core-tools": "^4.x.x"
+  },
+  "devDependencies": {}
+}
