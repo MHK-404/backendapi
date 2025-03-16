@@ -22,9 +22,14 @@ module.exports = async function (context, req) {
     // Log the results
     context.log('Results:', { bmi, totalScore, riskCategory });
 
-    // Send response
+    // Send response with CORS headers
     context.res = {
         status: 200,
+        headers: {
+            'Access-Control-Allow-Origin': 'https://icy-grass-028f08d00.6.azurestaticapps.net',
+            'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE',
+            'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+        },
         body: { bmi, totalScore, riskCategory },
     };
 };
