@@ -2,7 +2,14 @@
   "version": "2.0",
   "extensions": {
     "http": {
-      "routePrefix": "api"
+      "cors": {
+        "allowedOrigins": [
+          "https://icy-grass-028f08d00.6.azurestaticapps.net",
+          "http://localhost:3000"
+        ],
+        "allowedMethods": ["GET", "POST", "PUT", "DELETE"],
+        "allowedHeaders": ["Content-Type", "Authorization"]
+      }
     }
   }
 }
